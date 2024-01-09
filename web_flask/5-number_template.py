@@ -9,11 +9,17 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
+    """
+    Display "Hello HBNB!" when the root URL is accessed.
+    """
     return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
+    """
+    Display "HBNB" when /hbnb is accessed.
+    """
     return 'HBNB'
 
 
